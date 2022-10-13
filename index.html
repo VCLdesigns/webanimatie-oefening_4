@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Oefening 4</title>
+</head>
+
+<body>
+    <div id="game">
+        <p id="gevonden">Hoera!</p>
+        <div id="doorzichtige_knop"></div>
+    </div>
+    <script>
+        var wally = document.querySelector("#doorzichtige_knop");
+        var gevonden = document.querySelector("#gevonden");
+        wally.addEventListener("dblclick", hoera);
+        function hoera(evt) {
+            gevonden.classList.add("hoera")
+        }
+    </script>
+</body>
+
+</html>
